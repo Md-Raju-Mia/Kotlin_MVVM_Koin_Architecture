@@ -8,8 +8,6 @@
     android:clickable="true"
     android:id="@+id/cardViewAssignedDefect"
     android:focusable="true"
-    tools:ignore="UnusedAttribute"
-    android:foreground="?android:attr/selectableItemBackground"
     app:cardCornerRadius="8dp"
     app:cardElevation="8dp">
 
@@ -17,7 +15,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:background="@color/white">
 
         <RelativeLayout
             android:id="@+id/relativeLayout2"
@@ -85,6 +84,7 @@
                     android:text="Defect ID :"
                     android:textFontWeight="400"
                     android:textSize="12sp"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/textDefectID"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -99,6 +99,7 @@
                     android:text="@{assignedDefect.defectId}"
                     android:textFontWeight="400"
                     android:textSize="12sp"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -122,6 +123,7 @@
                     android:text="Vehicle Type :"
                     android:textFontWeight="400"
                     android:textSize="12sp"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/textVehicleType"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -136,6 +138,7 @@
                     android:text="@{assignedDefect.vehicleType}"
                     android:textFontWeight="400"
                     android:textSize="12sp"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -164,6 +167,7 @@
                 android:text="No. of Job"
                 android:textFontWeight="400"
                 android:textSize="12sp"
+                android:textColor="@color/black"
                 app:layout_constraintBottom_toTopOf="@+id/textViewJobCount"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -178,6 +182,7 @@
                 android:text="@{assignedDefect.totalService}"
                 android:textFontWeight="500"
                 android:textSize="36sp"
+                android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
